@@ -1,0 +1,10 @@
+logging:
+  # log-levels: OFF, ERROR, WARN, INFO, DEBUG, TRACE, ALL
+  loggers:
+    "external-api-logger":
+      level: ALL
+      additive: false
+      appenders:
+        - type: console
+          threshold: ALL
+          timeZone: UTC
