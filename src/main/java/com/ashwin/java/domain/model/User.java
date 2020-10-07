@@ -4,13 +4,15 @@ public class User {
     String firstname;
     String lastname;
     int age;
+    int extra;
 
     public User() { }
 
-    public User(String firstname, String lastname, int age) {
+    public User(String firstname, String lastname, int age, int extra) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
+        this.extra = extra;
     }
 
     public String getFirstname() {
@@ -35,6 +37,14 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getExtra() {
+        return extra;
+    }
+
+    public void setExtra(int extra) {
+        this.extra = extra;
     }
 
     @Override
